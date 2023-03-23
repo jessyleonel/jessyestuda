@@ -13,14 +13,16 @@ public class Colecao_Dictionary : MonoBehaviour
         Dictionary<string,string> malvado = new Dictionary<string,string>();
 
         //adiciona lista de nomes (Nome, result)
-        malvado.Add("Matador", "È o primeiro vil„o");
-        malvado.Add("Atirador", "È o segundo vil„o");
+        malvado.Add("Matador", "√© o primeiro vil√£o");
+        malvado.Add("Atirador", "√© o segundo vil√£o");
+        malvado.Add("Fedorento", "√© o terceiro vil√£o");
+        malvado.Remove("Matador"); //pode remover
 
         foreach(string chave in malvado.Keys)
         {
             //percorre a lista e exite a chave
             print(malvado[chave]);
-            //pode criar condiÁ„o 
+            //pode criar condi√ß√£o 
             if (chave == "Atirador")
             {
                 print(malvado[chave]);
